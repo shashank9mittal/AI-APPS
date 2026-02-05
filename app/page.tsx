@@ -10,7 +10,35 @@ export default function Home() {
         <p className="mt-2 text-center text-zinc-600 dark:text-zinc-400">
           Choose an AI experience to get started
         </p>
-        <div className="mt-12 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+          <Link
+            href="/ui/chat"
+            className="flex items-center gap-3 rounded-2xl border border-zinc-200 bg-white/90 px-8 py-6 shadow-lg shadow-zinc-200/50 transition-all hover:border-amber-200 hover:shadow-amber-500/10 dark:border-zinc-700 dark:bg-zinc-800/90 dark:shadow-zinc-900/50 dark:hover:border-amber-900/50"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 dark:bg-amber-900/30">
+              <svg
+                className="h-6 w-6 text-amber-600 dark:text-amber-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h2 className="font-semibold text-zinc-800 dark:text-zinc-100">
+                Chat
+              </h2>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                Multi-turn conversation
+              </p>
+            </div>
+          </Link>
           <Link
             href="/ui/completion"
             className="flex items-center gap-3 rounded-2xl border border-zinc-200 bg-white/90 px-8 py-6 shadow-lg shadow-zinc-200/50 transition-all hover:border-amber-200 hover:shadow-amber-500/10 dark:border-zinc-700 dark:bg-zinc-800/90 dark:shadow-zinc-900/50 dark:hover:border-amber-900/50"
