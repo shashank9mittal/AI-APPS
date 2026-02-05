@@ -7,6 +7,7 @@ const navItems = [
   { href: "/ui/chat", label: "Chat" },
   { href: "/ui/completion", label: "Completion" },
   { href: "/ui/stream", label: "Streaming" },
+  { href: "/ui/structured-data", label: "Recipe" },
 ] as const;
 
 export default function Header() {
