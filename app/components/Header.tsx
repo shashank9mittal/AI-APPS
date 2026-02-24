@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/ui/chat", label: "Chat" },
+  { href: "/ui/multi-modal-chat", label: "Multi-modal" },
   { href: "/ui/completion", label: "Completion" },
   { href: "/ui/stream", label: "Streaming" },
   { href: "/ui/structured-data", label: "Recipe" },
